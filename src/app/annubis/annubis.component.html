@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Annubis Horus</title>
+</head>
+
+<body>
+
+    <a routerLink="/"><img src="../../assets/personagens/AnnubisHorus.png" class="icon" /></a>
+    <p class="nomePersonagem">Annubis Horus</p>
+    <p class="exposicao">Exposição Paranormal: 45%</p>
+    <br />
+    <p class="fonte">ATRIBUTOS : </p>
+
+
+    <script type="text/javascript" src="botao.js"></script>
+
+    <div>
+        <p class="vidaCSS">Vida (MAX 56):</p>
+        <div class="vidaCSS" id="vida">56</div>
+
+
+        <button id="menosUm" class="botaoVida"
+            onclick="total('vida' ,document.getElementById('vida').innerText, -1)">-1</button>
+
+        <button id="maisUm" class="botaoVida"
+            onclick="total('vida', document.getElementById('vida').innerText, +1)">+1</button>
+
+        <button id="menosCinco" class="botaoVida"
+            onclick="total('vida' ,document.getElementById('vida').innerText, -5)">-5</button>
+
+        <button id="maisCinco" class="botaoVida"
+            onclick="total('vida',document.getElementById('vida').innerText, +5)">+5</button>
+    </div>
+
+    <div class="morrendo">
+        <input type="checkbox" class="botoes"> Morrendo
+    </div>
+
+    <div class="inconsciente">
+        <input type="checkbox" class="botoes"> Inconsciente
+    </div>
+
+
+    <div>
+        <p class="sanidadeCSS">Sanidade (MAX 30):</p>
+        <div class="sanidadeCSS" id="sanidade">30</div>
+
+
+        <button id="menosUm" class="botaoSanidade"
+            onclick="total('sanidade',document.getElementById('sanidade').innerText, -1)">-1</button>
+
+        <button id="maisUm" class="botaoSanidade"
+            onclick="total('sanidade',document.getElementById('sanidade').innerText, +1)">+1</button>
+
+        <button id="menosCinco" class="botaoSanidade"
+            onclick="total('sanidade',document.getElementById('sanidade').innerText, -5)">-5</button>
+
+        <button id="maisCinco" class="botaoSanidade"
+            onclick="total('sanidade',document.getElementById('sanidade').innerText, +5)">+5</button>
+    </div>
+
+    <div class="louco">
+        <input type="checkbox" class="botoes"> Insano
+    </div>
+
+
+    <div>
+        <p class="peCSS">PE (MAX 45): </p>
+        <div class="peCSS" id="pe">45</div>
+
+        <button id="menosUm" class="botaoPe"
+            onclick="total('pe',document.getElementById('pe').innerText, -1)">-1</button>
+
+        <button id="maisUm" class="botaoPe"
+            onclick="total('pe',document.getElementById('pe').innerText, +1)">+1</button>
+
+        <button id="menosCinco" class="botaoPe"
+            onclick="total('pe',document.getElementById('pe').innerText, -5)">-5</button>
+
+        <button id="maisCinco" class="botaoPe"
+            onclick="total('pe',document.getElementById('pe').innerText, +5)">+5</button>
+    </div>
+
+
+
+    <div class="box">
+
+        <table>
+
+            <legend class="legends">Atributos e Perícias</legend>
+            <tr>
+                <td>
+                    <legend class="atributos">
+                Força: 1,
+                Destreza: 3,
+                Constituição: 2,
+                Inteligência: 2,
+                Sabedoria: 3,
+                Carisma: 0
+                    </legend>
+                </td>
+            </tr>
+
+            <tr></tr>
+
+
+            <td>Acrobacia  (Destreza)</td>
+            <td>4</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('acrobacia'), 21, 4)">Acrobacia</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Arcanismo  (Inteligência)</td>
+            <td>7</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('arcanismo'), 21, 7)">Arcanismo</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Atletismo  (Força ou Destreza)</td>
+            <td>1</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('atletismo'), 21, 1)" >Atletismo</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Atuação  (Carisma)</td>
+            <td>1</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('atuacao'), 21, 1)">Atuação</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Blefar  (Carisma)</td>
+            <td>1</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('blefar'), 21, 1)">Blefar</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Furtividade  (Destreza)</td>
+            <td>11</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('furtividade'), 21, 11)">Furtividade</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>História  (Inteligência)</td>
+            <td>4</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('historia'), 21, 4)">História</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Intimidação  (Carisma)</td>
+            <td>1</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('intimidacao'), 21, 1)">Intimidação</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Intuição  (Sabedoria)</td>
+            <td>5</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('intuicao'), 21, 5)">Intuição</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Investigação  (Inteligência)</td>
+            <td>5</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('investigacao'), 21, 5)">Investigação</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Medicina  (Sabedoria)</td>
+            <td>7</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('medicina'), 21, 7)">Medicina</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Percepção  (Inteligência)</td>
+            <td>10</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('percepcao'), 21, 10)">Percepção</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Prestidigitação  (Força ou Destreza)</td>
+            <td>7</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('prestidigitacao'), 21, 7)">Prestidigitação</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Sobrevivência  (Sabedoria)</td>
+            <td>6</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('sobrevivencia'), 21, 6)">Sobrevivência</button></td>
+            <tr></tr>
+            <tr></tr>
+        </table>
+        <button id="d4" class="dados" onclick="dados(1, document.getElementById('d4'), 5)">D4</button>
+        <button id="d6" class="dados" onclick="dados(1, document.getElementById('d6'), 7)">D6</button>
+        <button id="d8" class="dados" onclick="dados(1, document.getElementById('d8'), 9)">D8</button>
+        <button id="d10" class="dados" onclick="dados(1, document.getElementById('d10'), 11)">D10</button>
+        <button id="d12" class="dados" onclick="dados(1, document.getElementById('d12'), 13)">D12</button>
+        <button id="d20" class="dados" onclick="dados(1, document.getElementById('d20'), 21)">D20</button>
+        <button id="d100" class="dados" onclick="dados(1, document.getElementById('d100'), 101)">D100</button>
+    </div>
+
+    <div class="box2">
+    <table>
+        <legend class="legends">Habilidades</legend>
+
+        <P>Esquiva: 12</P>
+        <P>Contra-Ataque: 6</P>
+
+        <P>
+            <p>30% - determinar se um objeto está amaldiçoado ou não apenas o segurando, sem necessidade de teste ou ritual.</p>
+
+            <p>35% - Mente Inabalável: Garante vantagem em testes de sanidade ao encontrar criaturas paranormais e ao invocar rituais.</p>
+
+            <p>40% - Concentração Inquebrável: Permite invocar dois rituais em uma mesma rodada, ou usar um ritual sem perder a concentração em um outro.</p>
+
+            <p>45% - O ocultista pode usar pontos de vida ao invocar um ritual ao invés de pontos de Ocultismo.</p>
+
+            <p>Afinidade com o Elemento Morte:
+            Vantagem em usar rituais de morte.
+            -5 de dano recebido (se for de morte)</p>
+
+
+        <legend class="legends">Inventário</legend>
+        <P>
+
+            <p>Espada Foice 2d8</p>
+            <p>Espada Foice: 4d8 (caso seja um ataque furtivo)</p>
+
+
+    </table>
+</div>
+
+</body>

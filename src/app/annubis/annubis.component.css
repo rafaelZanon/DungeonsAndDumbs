@@ -1,0 +1,127 @@
+.box2{
+  color: white;
+  position: absolute;
+  left: 87%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+  width: 20%;
+  top: 34.3%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+  width: 50%;
+  top: 30%;
+}
+
+fieldset {
+  border: 3px solid rgb(141, 149, 68);
+}
+
+.legends {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(0, 83, 116);
+  border-radius: 8px;
+}
+
+.icon {
+  height: 150px;
+}
+
+.botaoVida {
+  background-color: #941c34;
+  font-size: 15px;
+}
+
+.botaoSanidade {
+  background-color: #4785f0;
+  font-size: 15px;
+}
+
+.botaoPe {
+  background-color: #188987;
+  font-size: 15px;
+}
+
+.nomePersonagem {
+  text-decoration: underline aqua;
+  font-size: 18px;
+  color: white;
+}
+
+.atributos {
+  font-size: 16px;
+  color: white;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(20, 60, 75);
+  border-radius: 8px;
+
+}
+
+.vidaCSS {
+  font-size: 22px;
+  color: rgb(255, 92, 92);
+}
+
+.sanidadeCSS {
+  font-size: 22px;
+  color: rgb(0, 140, 255);
+}
+
+.peCSS {
+  font-size: 22px;
+  color: rgb(0, 255, 115);
+}
+
+.morrendo{
+  font-size: 16px;
+  color: rgb(255, 0, 0);
+}
+
+.inconsciente{
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+
+.louco{
+  font-size: 16px;
+  color: rgb(255, 191, 102);
+}
+
+.dados{
+  font-size: 22px;
+  height: 37px;
+}
+.dados2{
+  font-size: 13px;
+  height: 19px;
+}
+
+.exposicao{
+  text-decoration: underline aqua;
+  font-size: 18px;
+  color: white;
+}
+
+.fonte{
+  color: white;
+  font-size: 15px;
+
+}

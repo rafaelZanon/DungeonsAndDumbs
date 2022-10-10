@@ -1,0 +1,25 @@
+.legends {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(63, 40, 0);
+  border-radius: 8px;
+}
+
+.box {
+  color: white;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 15px;
+  width: 45%;
+}
+
+.icon {
+  height: 150px;
+}
+
+

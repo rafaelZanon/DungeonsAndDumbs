@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Braum</title>
+</head>
+
+<body>
+
+  <a routerLink="/"><img src="../../assets/personagens/Braum.png" class="icon" /></a>
+  <p class="nomePersonagem">Braum (Shippuden)</p>
+  <p class="exposicao">Exposição Paranormal: 55%</p>
+  <p class="entidade">Entidade: Energia</p>
+  <br />
+  <p class="fonte">ATRIBUTOS : </p>
+
+
+  <script type="text/javascript" src="botao.js"></script>
+
+  <div>
+    <p class="vidaCSS">Vida (MAX 80):</p>
+    <div class="vidaCSS" id="vida">80</div>
+
+
+    <button id="menosUm" class="botaoVida"
+      onclick="total('vida' ,document.getElementById('vida').innerText, -1)">-1</button>
+
+    <button id="maisUm" class="botaoVida"
+      onclick="total('vida', document.getElementById('vida').innerText, +1)">+1</button>
+
+    <button id="menosCinco" class="botaoVida"
+      onclick="total('vida' ,document.getElementById('vida').innerText, -5)">-5</button>
+
+    <button id="maisCinco" class="botaoVida"
+      onclick="total('vida',document.getElementById('vida').innerText, +5)">+5</button>
+  </div>
+
+  <div class="morrendo">
+    <input type="checkbox" class="botoes"> Morrendo
+  </div>
+
+  <div class="inconsciente">
+    <input type="checkbox" class="botoes"> Inconsciente
+  </div>
+
+
+  <div>
+    <p class="sanidadeCSS">Sanidade (MAX 32):</p>
+    <div class="sanidadeCSS" id="sanidade">32</div>
+
+
+    <button id="menosUm" class="botaoSanidade"
+      onclick="total('sanidade',document.getElementById('sanidade').innerText, -1)">-1</button>
+
+    <button id="maisUm" class="botaoSanidade"
+      onclick="total('sanidade',document.getElementById('sanidade').innerText, +1)">+1</button>
+
+    <button id="menosCinco" class="botaoSanidade"
+      onclick="total('sanidade',document.getElementById('sanidade').innerText, -5)">-5</button>
+
+    <button id="maisCinco" class="botaoSanidade"
+      onclick="total('sanidade',document.getElementById('sanidade').innerText, +5)">+5</button>
+  </div>
+
+  <div class="louco">
+    <input type="checkbox" class="botoes"> Insano
+  </div>
+
+
+  <div>
+    <p class="peCSS">PE (MAX 24): </p>
+    <div class="peCSS" id="pe">24</div>
+
+    <button id="menosUm" class="botaoPe" onclick="total('pe',document.getElementById('pe').innerText, -1)">-1</button>
+
+    <button id="maisUm" class="botaoPe" onclick="total('pe',document.getElementById('pe').innerText, +1)">+1</button>
+
+    <button id="menosCinco" class="botaoPe"
+      onclick="total('pe',document.getElementById('pe').innerText, -5)">-5</button>
+
+    <button id="maisCinco" class="botaoPe" onclick="total('pe',document.getElementById('pe').innerText, +5)">+5</button>
+  </div>
+
+
+
+  <div class="box">
+
+    <table>
+
+      <legend class="legends1">Atributos e Perícias</legend>
+      <tr>
+        <td>
+          <legend class="atributos">
+            Força: 3,
+            Destreza: 4,
+            Constituição: 2,
+            Inteligência: 3,
+            Sabedoria: 2,
+            Carisma: 2
+          </legend>
+        </td>
+      </tr>
+
+      <tr></tr>
+
+
+      <td>Acrobacia (Destreza)</td>
+      <td>15</td>
+      <td><button class="dados2" onclick="pericias(1, document.getElementById('acrobacia'), 21, 15)">Acrobacia</button>
+      </td>
+      <tr></tr>
+      <tr></tr>
+      <td>Arcanismo (Inteligência)</td>
+      <td>3</td>
+      <td><button class="dados2" onclick="pericias(1, document.getElementById('arcanismo'), 21, 3)">Arcanismo</button>
+      </td>
+      <tr></tr>
+      <tr></tr>
+      <td>Atletismo (Força ou Destreza)</td>
+      <td>10</td>
+      <td><button class="dados2" onclick="pericias(1, document.getElementById('atletismo'), 21, 10)">Atletismo</button>
+      </td>
+      <tr></tr>
+      <tr></tr>
+      <td>Atuação (Carisma)</td>
+      <td>2</td>
+      <td><button class="dados2" onclick="pericias(1, document.getElementById('atuacao'), 21, 2)">Atuação</button>
+      </td>
+      <tr></tr>
+      <tr></tr>
+      <td>Blefar (Carisma)</td>
+      <td>12</td>
+      <td><button class="dados2" onclick="pericias(1, document.getElementById('blefar'), 21, 12)">Blefar</button>
+      </td>
+      <tr></tr>
+      <tr></tr>
+      <td>Furtividade (Destreza)</td>
+      <td>9</td>
+      <td><button class="dados2"
+          onclick="pericias(1, document.getElementById('furtividade'), 21, 9)">Furtividade</button></td>
+      <tr></tr>
+      <tr></tr>
+      <td>História (Inteligência)</td>
+      <td>3</td>
+      <td><button class="dados2" onclick="pericias(1, document.getElementById('historia'), 21, 3)">História</button>
+      </td>
+      <tr></tr>
+      <tr></tr>
+      <td>Intimidação (Carisma)</td>
+      <td>8</td>
+      <td><button class="dados2"
+          onclick="pericias(1, document.getElementById('intimidacao'), 21, 8)">Intimidação</button></td>
+      <tr></tr>
+      <tr></tr>
+      <td>Intuição (Sabedoria)</td>
+      <td>2</td>
+      <td><button class="dados2" onclick="pericias(1, document.getElementById('intuicao'), 21, 2)">Intuição</button>
+      </td>
+      <tr></tr>
+      <tr></tr>
+      <td>Investigação (Inteligência)</td>
+      <td>8</td>
+      <td><button class="dados2"
+          onclick="pericias(1, document.getElementById('investigacao'), 21, 8)">Investigação</button></td>
+      <tr></tr>
+      <tr></tr>
+      <td>Medicina (Sabedoria)</td>
+      <td>7</td>
+      <td><button class="dados2" onclick="pericias(1, document.getElementById('medicina'), 21, 7)">Medicina</button>
+      </td>
+      <tr></tr>
+      <tr></tr>
+      <td>Percepção (Inteligência)</td>
+      <td>2</td>
+      <td><button class="dados2" onclick="pericias(1, document.getElementById('percepcao'), 21, 2)">Percepção</button>
+      </td>
+      <tr></tr>
+      <tr></tr>
+      <td>Prestidigitação (Força ou Destreza)</td>
+      <td>11</td>
+      <td><button class="dados2"
+          onclick="pericias(1, document.getElementById('prestidigitacao'), 21, 11)">Prestidigitação</button>
+      </td>
+      <tr></tr>
+      <tr></tr>
+      <td>Sobrevivência (Sabedoria)</td>
+      <td>5</td>
+      <td><button class="dados2"
+          onclick="pericias(1, document.getElementById('sobrevivencia'), 21, 5)">Sobrevivência</button></td>
+      <tr></tr>
+      <tr></tr>
+    </table>
+    <button id="d4" class="dados" onclick="dados(1, document.getElementById('d4'), 5)">D4</button>
+    <button id="d6" class="dados" onclick="dados(1, document.getElementById('d6'), 7)">D6</button>
+    <button id="d8" class="dados" onclick="dados(1, document.getElementById('d8'), 9)">D8</button>
+    <button id="d10" class="dados" onclick="dados(1, document.getElementById('d10'), 11)">D10</button>
+    <button id="d12" class="dados" onclick="dados(1, document.getElementById('d12'), 13)">D12</button>
+    <button id="d20" class="dados" onclick="dados(1, document.getElementById('d20'), 21)">D20</button>
+    <button id="d100" class="dados" onclick="dados(1, document.getElementById('d100'), 101)">D100</button>
+  </div>
+
+
+
+  <div class="box2">
+    <table>
+      <legend class="legends">Habilidades</legend>
+
+      <P>Esquiva: 22</P>
+      <P>Contra-Ataque: 18</P>
+
+      <P>
+      <p>30% - Saque rapido : Permite sacar armas de fogo utilizando ações livres durante o combate.</p>
+
+      <p>35% - Reflexos Rápidos: Reação até a ataques surpresa</p>
+
+      <p>40% - Resistente: Garante uma armadura natural, fazendo com que todo dano físico seja reduzido em 5.</p>
+
+      <p>50% -
+        Combate Perfeito: Ter um desastre durante o combate tem
+        o mesmo efeito de um fracasso normal.</p>
+
+      <p>55% -
+        Eletrizante:
+      <P> Toda a vez que você usar qualquer ritual de energia
+        que envolva dano, esse dano será propagado em area repelindo
+        todos os inimigos causando 10 de dano direto em cada inimigo.</P>
+
+      <P>Se for um ritual de energia envolvido com cura:
+      <p>Uma vez por cena
+        vc pode atirar um pulso elétrico em um aliado morrendo, pra não deixar
+        o coração dele parar de bater, o aliado perde 10 de vida máxima e 5 de
+        sanidade maxima, mas volta diretamente para a batalha podendo agir com 1 de vida.
+      </p>
+
+
+
+      <p>Afinidade com o elemento Energia:
+        Vantagem em usar rituais de Energia.
+        -5 de dano recebido (se for de Energia)</p>
+
+      <p>Pistola Enérgica (Condição ter algo eletrico do lado) Gastando 7 PE
+        o usuário descarrega um tiro elétrico com sua mão
+        na direção do alvo causando 5d10 (Dano de Energia)</p>
+
+      <p>Cicatrização enérgica: Se concentrando na Energia usuário dispara um raio na ferida
+        que cauteriza imediatamente curando 2D8 (3PE) </p>
+
+
+      <legend class="legends">Inventário</legend>
+      <P>
+
+      <p>6 Adagas: 1d12</p>
+      <p>Adaga: 1d12</p>
+      <p>Adaga: 3d12 (caso seja um ataque critico)</p>
+      <p>Adaga: 5d12 (caso seja um ataque furtivo)</p>
+
+
+
+    </table>
+  </div>
+
+</body>

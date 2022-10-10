@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leonardo V. Leone</title>
+</head>
+
+<body>
+
+    <a routerLink="/"><img src="../../assets/personagens/Leonardo.png" class="icon" /></a>
+    <p class="nomePersonagem">{{ nome }}</p>
+    <p class="exposicao">{{ exposicao }}</p>
+    <p class="entidade">{{ entidade }}</p>
+    <br />
+    <p class="fonte">{{ atributosTitulo }}</p>
+
+
+    <script type="text/javascript" src="botao.js"></script>
+
+    <div>
+        <p class="vidaCSS">{{ vida }}</p>
+        <div class="vidaCSS" id="vida">{{ qtdVida }}</div>
+
+
+        <button id="menosUm" class="botaoVida"
+            onclick="total('vida' ,document.getElementById('vida').innerText, -1)">{{ _1 }}</button>
+
+        <button id="maisUm" class="botaoVida"
+            onclick="total('vida', document.getElementById('vida').innerText, +1)">{{ 1 }}</button>
+
+        <button id="menosCinco" class="botaoVida"
+            onclick="total('vida' ,document.getElementById('vida').innerText, -5)">{{ _5 }}</button>
+
+        <button id="maisCinco" class="botaoVida"
+            onclick="total('vida',document.getElementById('vida').innerText, +5)">{{ 5 }}</button>
+    </div>
+
+    <div class="morrendo">
+        <input type="checkbox" class="botoes"> {{ morrendo }}
+    </div>
+
+    <div class="inconsciente">
+        <input type="checkbox" class="botoes"> {{ inconsciente}}
+    </div>
+
+
+    <div>
+        <p class="sanidadeCSS">{{ sanidade }}</p>
+        <div class="sanidadeCSS" id="sanidade">{{ qtdSanidade }}</div>
+
+
+        <button id="menosUm" class="botaoSanidade"
+            onclick="total('sanidade',document.getElementById('sanidade').innerText, -1)">{{ _1 }}</button>
+
+        <button id="maisUm" class="botaoSanidade"
+            onclick="total('sanidade',document.getElementById('sanidade').innerText, +1)">{{ 1 }}</button>
+
+        <button id="menosCinco" class="botaoSanidade"
+            onclick="total('sanidade',document.getElementById('sanidade').innerText, -5)">{{ _5 }}</button>
+
+        <button id="maisCinco" class="botaoSanidade"
+            onclick="total('sanidade',document.getElementById('sanidade').innerText, +5)">{{ 5 }}</button>
+    </div>
+
+    <div class="louco">
+        <input type="checkbox" class="botoes"> {{ insano }}
+    </div>
+
+
+    <div>
+        <p class="peCSS">{{ pontoDeEsforco }}</p>
+        <div class="peCSS" id="pe">{{ qtdPE }}</div>
+
+        <button id="menosUm" class="botaoPe"
+            onclick="total('pe',document.getElementById('pe').innerText, -1)">{{ _1 }}</button>
+
+        <button id="maisUm" class="botaoPe"
+            onclick="total('pe',document.getElementById('pe').innerText, +1)">{{ 1 }}</button>
+
+        <button id="menosCinco" class="botaoPe"
+            onclick="total('pe',document.getElementById('pe').innerText, -5)">{{ _5 }}</button>
+
+        <button id="maisCinco" class="botaoPe"
+            onclick="total('pe',document.getElementById('pe').innerText, +5)">{{ 5 }}</button>
+    </div>
+
+
+
+    <div class="box">
+
+        <table>
+
+            <legend class="legends">{{ atributosEpericiasTitulo }}</legend>
+            <tr>
+                <td>
+                    <legend class="atributos">
+                {{forca}}
+                {{destreza}}
+                {{constituicao}}
+                {{sabedoria}}
+                {{carisma}}
+                    </legend>
+                </td>
+            </tr>
+
+            <tr></tr>
+
+
+            <td>Acrobacia  (Destreza)</td>
+            <td>4</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('acrobacia'), 21, 4)">Acrobacia</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Arcanismo  (Inteligência)</td>
+            <td>4</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('arcanismo'), 21, 4)">Arcanismo</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Atletismo  (Força ou Destreza)</td>
+            <td>3</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('atletismo'), 21, 3)" >Atletismo</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Atuação  (Carisma)</td>
+            <td>1</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('atuacao'), 21, 1)">Atuação</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Blefar  (Carisma)</td>
+            <td>2</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('blefar'), 21, 2)">Blefar</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Furtividade  (Destreza)</td>
+            <td>5</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('furtividade'), 21, 5)">Furtividade</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>História  (Inteligência)</td>
+            <td>7</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('historia'), 21, 7)">História</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Intimidação  (Carisma)</td>
+            <td>2</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('intimidacao'), 21, 2)">Intimidação</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Intuição  (Sabedoria)</td>
+            <td>3</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('intuicao'), 21, 3)">Intuição</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Investigação  (Inteligência)</td>
+            <td>7</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('investigacao'), 21, 7)">Investigação</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Medicina  (Sabedoria)</td>
+            <td>6</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('medicina'), 21, 6)">Medicina</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Percepção  (Inteligência)</td>
+            <td>1</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('percepcao'), 21, 1)">Percepção</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Prestidigitação  (Força ou Destreza)</td>
+            <td>15</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('prestidigitacao'), 21, 15)">Prestidigitação</button></td>
+            <tr></tr>
+            <tr></tr>
+            <td>Sobrevivência  (Sabedoria)</td>
+            <td>1</td>
+            <td><button class="dados2" onclick="pericias(1, document.getElementById('sobrevivencia'), 21, 1)">Sobrevivência</button></td>
+            <tr></tr>
+            <tr></tr>
+        </table>
+        <button id="d4" class="dados" onclick="dados(1, document.getElementById('d4'), 5)">D4</button>
+        <button id="d6" class="dados" onclick="dados(1, document.getElementById('d6'), 7)">D6</button>
+        <button id="d8" class="dados" onclick="dados(1, document.getElementById('d8'), 9)">D8</button>
+        <button id="d10" class="dados" onclick="dados(1, document.getElementById('d10'), 11)">D10</button>
+        <button id="d12" class="dados" onclick="dados(1, document.getElementById('d12'), 13)">D12</button>
+        <button id="d20" class="dados" onclick="dados(1, document.getElementById('d20'), 21)">D20</button>
+        <button id="d100" class="dados" onclick="dados(1, document.getElementById('d100'), 101)">D100</button>
+    </div>
+
+    <div class="box2">
+    <table>
+        <legend class="legends">Habilidades</legend>
+
+        <P>Esquiva: 19</P>
+        <P>Contra-Ataque: 10</P>
+
+        <P>
+            <p>30% - Saque rapido : Permite sacar armas de fogo utilizando ações livres durante o combate.</p>
+
+            <p>35% - Tecnica de esquiva aprimorada :
+                gastando 3 pontos de esforço (PE) poderá
+                escolher contra-ataque usando destreza para desviar e desferir um golpe contra o atacante.</p>
+
+            <p>40%- Resistente: Garante uma armadura natural, fazendo com que todo dano físico seja reduzido em 3.</p>
+
+            <p>50% - Combate Perfeito: Ter um desastre durante o combate tem o mesmo efeito de um fracasso normal.</p>
+
+            <p>Afinidade com o Elemento Morte:
+            Vantagem em usar rituais de morte.
+            -5 de dano recebido (se for de morte)</p>
+
+            <p>Invocar Criatura: 1 vez por sessão
+            Usuário gasta 8PE e invoca uma criatura
+            esqueletica depois que vomita lodo preto
+            fazendo com que seus olhos fiquem completamente brancos (3D8)</p>
+
+            <p>(8 PE) Eco Dolor:
+                Levitando as duas mãos uma sobre a outra na frente do rosto,
+                com os palmos um virado para o outro,
+                 ao assoprar, cria uma silhueta em tom negro do alvo,
+                 fazendo com que tenha seus movimentos repetidos por
+                  uma espécie de vulto. Após a preparação, esmagando
+                   a criatura modelada e batendo as mãos, todos os ataques
+                    dados no inimigo são "replicados"
+                     novamente em forma de vulto. (DANO: x D12)
+                        </p>
+
+
+        <legend class="legends">Inventário</legend>
+        <P>
+
+            <p>Lamina Oculta 1d12</p>
+            <p>Lamina Oculta: 4d12 (caso seja um ataque furtivo)</p>
+            <p>Fuzil de Precisão: 4d8</p>
+            <p>Fuzil de Precisão: 8d8 (caso seja critico)</p>
+
+
+    </table>
+</div>
+
+</body>
